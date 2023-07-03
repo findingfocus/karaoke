@@ -7,11 +7,11 @@ require '/dependencies/tesound'
 
 require '/states/PlayState'
 
-WINDOW_WIDTH = 1920
-WINDOW_HEIGHT = 1080
+WINDOW_WIDTH = 811
+WINDOW_HEIGHT = 480
 
-VIRTUAL_WIDTH = 1920
-VIRTUAL_HEIGHT = 1080
+VIRTUAL_WIDTH = 811
+VIRTUAL_HEIGHT = 480
 
 function love.load()
 	love.graphics.setDefaultFilter('nearest', 'nearest')
@@ -25,8 +25,8 @@ function love.load()
     arrow = love.graphics.newImage('pics/arrow1.png')
 
 	push:setupScreen(VIRTUAL_WIDTH, VIRTUAL_HEIGHT, WINDOW_WIDTH, WINDOW_HEIGHT, {
-		vsync = true,
-		fullscreen = true,
+		vsync = false,
+		fullscreen = false,
 		resizable = false
 	})
 
@@ -73,7 +73,7 @@ function love.draw()
 
 	gStateMachine:render()
 
-	--displayFPS()
+	displayFPS()
 
 	push:finish()
 end
@@ -81,5 +81,5 @@ end
 function displayFPS()
 	love.graphics.setFont(pixelFont)
 	love.graphics.setColor(0/255, 255/255, 0/255, 255/255)
-	love.graphics.print('FPS: ' .. tostring(love.timer.getFPS()), 10, 10)
+	love.graphics.print('FPS: ' .. tostring(love.timer.getFPS()), 5, 5)
 end
