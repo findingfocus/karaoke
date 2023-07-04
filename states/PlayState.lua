@@ -87,11 +87,11 @@ function PlayState:update(dt)
 end
 
 function PlayState:render()
-	--love.graphics.clear(50/255, 50/255, 200/255, 255/255)
-    love.graphics.draw(wheel, 960, 540, radians, 1, 1, 500, 500)
-    love.graphics.draw(arrow, 835, -130)
+	love.graphics.clear(50/255, 50/255, 200/255, 255/255)
+    love.graphics.draw(wheel2, 405, 240, radians, 1, 1, 240, 240)
+    love.graphics.draw(arrow, 355, -40, 0, 0.4, 0.4)
 
-    ---[[
+    --[[
 --    love.graphics.print('degrees: ' .. tostring(degrees), 5, 5)
 --    love.graphics.print('velocity: ' .. tostring(velocity), 5, 5 + TEXT_OFFSET)
  --   love.graphics.print('lastVelocity: ' .. tostring(lastVelocity), 5, 5 + TEXT_OFFSET * 2)
@@ -106,7 +106,7 @@ function PlayState:render()
     love.graphics.print('width: ' .. tostring(love.graphics.getWidth()), 5, 5 + TEXT_OFFSET)
     love.graphics.print('height: ' .. tostring(love.graphics.getHeight()), 5, 5 + TEXT_OFFSET * 2)
     --]]
----[[
+--[[
     love.graphics.setColor(0/255, 255/255, 0/255, (gOpacity + gMod)/255)
     love.graphics.rectangle('fill', 0, 0, VIRTUAL_WIDTH, VIRTUAL_HEIGHT)
 --[[
