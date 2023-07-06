@@ -26,7 +26,7 @@ function love.load()
 
     wheel = love.graphics.newImage('pics/wheel1.png')
     wheel2 = love.graphics.newImage('pics/wheel2.png')
-    wheel3 = love.graphics.newImage('pics/wheel3.png')
+    wheel3 = love.graphics.newImage('pics/genres.png')
     arrow = love.graphics.newImage('pics/arrow1.png')
 
 	push:setupScreen(VIRTUAL_WIDTH, VIRTUAL_HEIGHT, WINDOW_WIDTH, WINDOW_HEIGHT, {
@@ -78,7 +78,7 @@ function love.draw()
 
 	gStateMachine:render()
 
-	displayFPS()
+	--displayFPS()
 
 	push:finish()
 end

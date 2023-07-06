@@ -88,7 +88,7 @@ end
 
 function PlayState:render()
 	love.graphics.clear(50/255, 50/255, 200/255, 255/255)
-    love.graphics.draw(wheel3, VIRTUAL_WIDTH / 2, VIRTUAL_HEIGHT / 2, radians, 1, 1, 155, 155)
+    love.graphics.draw(wheel3, VIRTUAL_WIDTH / 2, VIRTUAL_HEIGHT / 2, radians, 1, 1, 154, 155)
     love.graphics.draw(arrow, 232, -40, 0, 0.3, 0.3)
 
     --[[
